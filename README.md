@@ -21,7 +21,7 @@ pipx install .
 ```
 3. Run the program
 ```
-nmapsubnetonline -h
+nmapSubnetOnline -h
 ```
 
 ### Docker
