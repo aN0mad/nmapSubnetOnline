@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "nmapsubnetonline"
 version = "1.0.0"
-description = ""
+description = "Verify an nmap file against a target range file to determine if the network subnet is online or offline."
 authors = ["John Smith <j.smith@domain.com>"]
 readme = "README.md"
 include = ["LICENSE","README.md"]
