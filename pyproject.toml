@@ -2,6 +2,7 @@
 name = "nmapsubnetonline"
 version = "1.0.0"
 description = ""
+authors = ["John Smith <j.smith@domain.com>"]
 readme = "README.md"
 include = ["LICENSE","README.md"]
 license = ""
