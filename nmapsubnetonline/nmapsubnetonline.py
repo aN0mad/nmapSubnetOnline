@@ -54,7 +54,7 @@ def do_argparse() -> dict:
     # Create the parser
     parser = argparse.ArgumentParser(
         description="Verify an nmap file against a target range file to determine if the network is online or offline",
-        epilog="Example: nmapSubnetOnline -r ranges.txt -n nmap.xml -d /path/to/nmap/files/",
+        epilog="Example: nmapSubnetOnline -r ranges.txt -n nmap.xml",
     )
 
     # Add arguments
@@ -227,7 +227,11 @@ def nmapsubnetonline(args: dict):
     with open(path.join(args["outputDir"], csv_output), "w") as f:
         f.write("Network,Online\n")
         for network in networks:
-            f.write(f"{network['network']},{network['online']}\n")
+            #f.write(f"{network['network']},{network['online']}\n")
+            if network["online"]:
+                f.write(f"{network['network']},Available\n")
+            else:
+                f.write(f"{network['network']},Unavailable\n")
 
 
 def main():
