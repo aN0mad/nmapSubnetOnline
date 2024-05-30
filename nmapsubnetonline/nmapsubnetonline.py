@@ -126,7 +126,7 @@ def verifyArgs(args: dict) -> dict:
         if len(args["nmapFiles"]) > 0:
             for file in args["nmapFiles"]:
                 # Verify we were given a .xml file
-                if file.lower.endswith(".xml"):
+                if file.lower().endswith(".xml"):
                     nmapFiles.append(file)
                 else:
                     logger.warning("Skipping file: '{file}'")
