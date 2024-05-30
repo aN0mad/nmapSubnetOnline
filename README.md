@@ -66,7 +66,7 @@ options:
   --debug               Enable debug
   --quiet               Enable quiet mode
 
-Example: nmapSubnetOnline -r ranges.txt -n nmap.xml -d /path/to/nmap/files/
+Example: nmapSubnetOnline -r ranges.txt -n nmap.xml
 ```
 
 ## Examples 
